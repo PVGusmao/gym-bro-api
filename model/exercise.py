@@ -10,7 +10,7 @@ class Exercises(Base):
     __tablename__ = 'exercises'
 
     id = Column("id", Integer, primary_key=True)
-    day_serie = Column("day_serie", String, unique=True)
+    day_serie = Column("day_serie", String, unique=False)
     name = Column("name", String, nullable=False)
     muscle_group = Column("muscle_group", String, nullable=False)
     video_exercise = Column("video_exercise", String)
